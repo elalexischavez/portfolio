@@ -5,6 +5,13 @@
     list-style: none;
     box-sizing: border-box;
 }
+a {
+    color: #9D9815;
+    font-weight: 400;
+}
+body {
+    background-color: #f9f4ef;
+}
 
 header {
     width: 100%;
@@ -34,7 +41,7 @@ header section {
 }
 
 header section nav .active {
-    color: lightblue;
+    color: #9D9815;
 }
 
 header section nav a {
@@ -57,12 +64,159 @@ main .image-container img{
     border-radius: 15px;
     user-select: none;
 }
-/* .float-text {
+
+
+main .about-me > article {
+    display: flex;
+    margin: 20px;
+}
+
+main .about-me > article .studies-container, .tech-skills-container, .soft-skills-container, .cv-container {
+    padding: 10px;
+}
+main .about-me > article .soft-skills-container ul {
+    padding-left: 50px;;
+}
+main .about-me > article .cv-container button {
+    animation: all 100ms ease-in;
+    border: none;
+    border-radius: 5px;
+    background-color: #343434;
+    margin: 20px 0px;
+    height: 46px;
+    width: 271px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .about-me > article .cv-container button:active {
+    transform: scale(.95);
+}
+
+main .about-me > article .cv-container button span {
+    color: #fffe;
+   
+}
+main .about-me .about-me-section {
+    width: 50%;
+}
+main .about-me .about-me-section .image-ambient {
+    width: 100%;
+}
+main h2 {
+    font-family: 'Inter Regular';
+    font-size: 20px;
+    text-align:center;
+}
+main h3 {
+    font-family: 'Inter Regular';
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+main p, span, li, button {
+    font-family: 'Inter Tight';
+    color: #181818;
+    list-style-type: square;
+    font-weight: 200;
+}
+
+.download-arrow {
+    color: red;
+
+}
+
+/*
+    PROYECTS SECTION
+*/
+
+main .about-me, .proyects, .news {
+    margin: 0px auto;
+    margin-top: 40px; 
+    width: 1048px;
+    font-size: 20px;
+}
+
+main .proyects .banner-container {
+    margin: 20px 0px;
+    height: 257px;
+    width: 1048px;
+    position: relative;
+}
+main .proyects .banner-container .atoyl-link {
     position: absolute;
-    bottom: 10px;
     left: 10px;
-    color: #fff;
-    font-weight: bold;
-    font-family: 'Inter Tight', sans-serif;
-    text-transform: uppercase;  
-} */
+    bottom: 10px;
+    width: 271px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: #343433;
+    color: #fffe;
+    border: none;
+}
+
+/*
+    NEWS SECTION
+*/
+
+.pending {
+    margin: 100px 0px;
+    text-align: center;
+}
+/*
+    CONTACT SECTION
+*/
+
+main .contact .contact-item {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    margin: 80px 0px;
+    font-size: 20px;
+}
+main .contact .contact-item img {
+    width: 210px;
+    height: 212px;
+}
+/*
+    FOOTER
+*/
+footer {
+    height: 158px;
+    width: 100%;
+    background-color: #262626;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+footer div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px;
+}
+footer p, a {
+    font-size: 16px;
+}
+footer a, p {
+    color: #fffe;
+    margin: 10px 0px;
+    font-family: 'Inter Tight';
+    font-weight: 200;
+}
+
+div nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .copyright {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+    margin: 20px;
+}
+footer .copyright p {
+    color: #fffe;
+}

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../assets/fonts/Inter-Regular.ttf)
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -5,10 +10,16 @@
     list-style: none;
     box-sizing: border-box;
 }
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+}
 a {
     color: #9D9815;
     font-weight: 400;
 }
+
 body {
     background-color: #f9f4ef;
 }
@@ -19,7 +30,7 @@ header {
 }
 
 header .header-text {
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 200;
     line-height: 24px;
     font-size: 18px;
@@ -27,8 +38,8 @@ header .header-text {
 }
 
 header h1 {
-    width: 167px;
-    height: 24px;  
+    /* width: 167px;
+    height: 24px; */
 }
 
 header section {
@@ -47,17 +58,19 @@ header section nav .active {
 header section nav a {
     margin: 5px;
 }
+
 main {
     margin: 0px auto;
-    height: 80px;
     width: 1240px;
 }
+
 main .image-container {
     width: 100%;
     position: relative;
     max-height: 400px;
 }
-main .image-container img{
+
+main .image-container img {
     width: 100%;
     height: 400px;
     opacity: .90;
@@ -66,18 +79,24 @@ main .image-container img{
 }
 
 
-main .about-me > article {
+main .about-me>article {
     display: flex;
     margin: 20px;
 }
 
-main .about-me > article .studies-container, .tech-skills-container, .soft-skills-container, .cv-container {
+main .about-me>article .studies-container,
+.tech-skills-container,
+.soft-skills-container,
+.cv-container {
     padding: 10px;
 }
-main .about-me > article .soft-skills-container ul {
-    padding-left: 50px;;
+
+main .about-me>article .soft-skills-container ul {
+    padding-left: 50px;
+    ;
 }
-main .about-me > article .cv-container button {
+
+main .about-me>article .cv-container button {
     animation: all 100ms ease-in;
     border: none;
     border-radius: 5px;
@@ -89,32 +108,41 @@ main .about-me > article .cv-container button {
     align-items: center;
     justify-content: center;
 }
-main .about-me > article .cv-container button:active {
+
+main .about-me>article .cv-container button:active {
     transform: scale(.95);
 }
 
-main .about-me > article .cv-container button span {
+main .about-me>article .cv-container button span {
     color: #fffe;
-   
+
 }
+
 main .about-me .about-me-section {
     width: 50%;
 }
+
 main .about-me .about-me-section .image-ambient {
     width: 100%;
 }
+
 main h2 {
-    font-family: 'Inter Regular';
+    font-family: 'Inter';
     font-size: 20px;
-    text-align:center;
+    text-align: center;
 }
+
 main h3 {
-    font-family: 'Inter Regular';
+    font-family: 'Inter';
     font-weight: 400;
     margin-bottom: 20px;
 }
-main p, span, li, button {
-    font-family: 'Inter Tight';
+
+main p,
+span,
+li,
+button {
+    font-family: 'Inter';
     color: #181818;
     list-style-type: square;
     font-weight: 200;
@@ -129,9 +157,11 @@ main p, span, li, button {
     PROYECTS SECTION
 */
 
-main .about-me, .proyects, .news {
+main .about-me,
+.proyects,
+.news {
     margin: 0px auto;
-    margin-top: 40px; 
+    margin-top: 40px;
     width: 1048px;
     font-size: 20px;
 }
@@ -142,6 +172,7 @@ main .proyects .banner-container {
     width: 1048px;
     position: relative;
 }
+
 main .proyects .banner-container .atoyl-link {
     position: absolute;
     left: 10px;
@@ -162,6 +193,7 @@ main .proyects .banner-container .atoyl-link {
     margin: 100px 0px;
     text-align: center;
 }
+
 /*
     CONTACT SECTION
 */
@@ -173,10 +205,12 @@ main .contact .contact-item {
     margin: 80px 0px;
     font-size: 20px;
 }
+
 main .contact .contact-item img {
     width: 210px;
     height: 212px;
 }
+
 /*
     FOOTER
 */
@@ -189,19 +223,24 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
 footer div {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     margin: 20px;
 }
-footer p, a {
+
+footer p,
+a {
     font-size: 16px;
 }
-footer a, p {
+
+footer a,
+p {
     color: #fffe;
     margin: 10px 0px;
-    font-family: 'Inter Tight';
+    font-family: 'Inter';
     font-weight: 200;
 }
 
@@ -217,6 +256,103 @@ footer .copyright {
     text-align: center;
     margin: 20px;
 }
+
 footer .copyright p {
     color: #fffe;
 }
+
+/*
+
+    CONTACT PAGE
+
+*/
+
+.main-content {
+    width: 100vw;
+    height: 794px;
+    background: red;
+}
+
+
+
+/*
+
+    PROYECTS PAGE
+
+*/
+
+
+.main-proyects
+{
+    width: 1250px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.proyect
+{
+    height: 400px;
+    width: 591px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 30px;
+}
+
+.proyect-image-container
+{
+    height: 164px;
+}
+
+.proyect-description
+{
+    padding: 20px;
+    color: #434343;
+    font-family: 'Inter';
+}
+
+.proyect-description p
+{
+    color: #434343;
+}
+
+
+.buttons-container
+{
+    display: flex;
+    margin-top: 30px;
+}
+
+.btn
+{
+    transition: transform 200ms ease;
+    border: none;
+    padding: 8px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn:active
+{
+    transform: scale(.8);
+}
+
+.go-to-site-btn
+{
+    background-color: #343433;
+    color: #fffe;
+    margin-right: 20px;
+}
+
+.go-to-github-btn
+{
+    background: transparent;
+}
+.go-to-github-btn > span
+{
+    text-decoration: underline;
+}
+

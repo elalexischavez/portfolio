@@ -305,6 +305,9 @@ footer .copyright p {
 .proyect-image-container
 {
     height: 164px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .proyect-description

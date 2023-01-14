@@ -167,7 +167,9 @@ main .about-me,
     font-size: 20px;
     margin-bottom: 100px;
 }
-
+.news {
+    width: 800px;
+}
 main .proyects .banner-container {
     margin: 20px 0px;
     height: 257px;

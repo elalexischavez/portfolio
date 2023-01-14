@@ -11,7 +11,9 @@ const validateFields = ({fields = []}) => {
     fields.forEach((field) =>  field.value.trim().length === 0? isAllowed = false : isAllowed);
     return isAllowed;
 }
-
+const resetFormValues = ({fields=[]}) => {
+    fields.forEach((field) => field.value = '');
+}
 //-> post information to server
 const loadInfo = async ({fields}) => {
     let values = []
@@ -43,6 +45,7 @@ const loadInfo = async ({fields}) => {
             const message = await loadInfo(formValues);
             alert.classList.add("alert-success")
             alert.innerHTML = message;
+            resetFormValues(formValues);
         }else {
             alert.innerHTML = 'Please fill all fields';
             alert.style.display = 'flex';

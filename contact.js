@@ -21,7 +21,7 @@ const loadInfo = async ({fields}) => {
         email: values[1],
         message: values[2]
     }
-    const response = await window.fetch('http://localhost:7071/api/azure-function', {
+    const response = await window.fetch('https://azure-function-test1.azurewebsites.net/api/azure-function', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

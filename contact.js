@@ -28,7 +28,7 @@ const loadInfo = async ({fields}) => {
         },
         body: JSON.stringify(document)
     });
-    const {message} = await response.json();
+    const { message } = await response.json();
     return message;
 }
 

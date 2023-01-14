@@ -1,10 +1,9 @@
 
-const API_URL = 'http://localhost:8080/api';
+const API_URL = 'https://blog-rest-server.azurewebsites.net/api';
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 (async ()=>{
     const lastPost = await getLastPost();
-    console.table (lastPost);
     loadHtmlData(lastPost[0]);
 })();
 

@@ -21,7 +21,6 @@ const loadInfo = async ({fields}) => {
         email: values[1],
         message: values[2]
     }
-    console.log(JSON.stringify(document))
     const response = await window.fetch('https://azure-function-test1.azurewebsites.net/api/azure-function', {
         method: 'POST',
         headers: {

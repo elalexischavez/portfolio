@@ -436,7 +436,7 @@ footer .copyright p {
 }
 
 .proyect {
-    height: 400px;
+    min-height: 400px;
     width: 591px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-top: 30px;
@@ -446,9 +446,12 @@ footer .copyright p {
     height: 164px;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    align-items: center;
 }
-
+.proyect-image {
+    width: 70px;
+    height: 70px;
+}
 .proyect-description {
     padding: 20px;
     color: #434343;

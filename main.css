@@ -15,6 +15,7 @@
     width: 100vw;
     height: 100vh;
 }
+
 a {
     color: #9D9815;
     font-weight: 400;
@@ -164,6 +165,7 @@ main .about-me,
     margin-top: 40px;
     width: 1048px;
     font-size: 20px;
+    margin-bottom: 100px;
 }
 
 main .proyects .banner-container {
@@ -192,6 +194,47 @@ main .proyects .banner-container .atoyl-link {
 .pending {
     margin: 100px 0px;
     text-align: center;
+}
+
+.banner-container {
+    position: relative;
+    /* width: 100%;
+    height: 400px;
+    margin: 20px 0px; */
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.post-data-container {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    font-size: 20px;
+    padding: 0px 0px 20px 40px;
+}
+
+.post-data {
+    color: #fffe;
+}
+
+.post-image {
+    object-fit: cover;
+}
+
+.author-name {
+    display: block;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.title {
+    display: block;
+    margin-bottom: 10px;
 }
 
 /*
@@ -268,13 +311,109 @@ footer .copyright p {
 */
 
 .main-content {
-    width: 100vw;
-    height: 794px;
-    background: red;
+    width: 1240px;
+    height: calc(100vh - 228px);
+    margin: 0px auto;
+    display: flex;
 }
 
+.form-container {
+    width: 100%;
+    height: 100%;
+    padding: 100px 50px;
+}
 
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.form-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.form-input {
+    background: #D9D9D9;
+    border: none;
+    padding-left: 20px;
+    height: 42px;
+    width: 429px;
+    margin: 20px 0px;
+}
+
+.text-area {
+    background: #D9D9D9;
+    border: none;
+    padding: 20px;
+    height: 169px;
+    width: 429px;
+    resize: vertical;
+    margin: 20px 0px;
+    font-family: 'Inter';
+}
+
+.form-submit {
+    width: 160px;
+    height: 43px;
+    left: 174px;
+    top: 689px;
+    color: #FFFFFF;
+    background: #343434;
+}
+
+.more-ways-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Inter';
+}
+.social-icons
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.icon-sn {
+    display: block;
+    margin: 10px;
+}
+.social-networks {
+    display: flex;
+    flex-direction: column;
+}
+
+.alert {
+    margin-top: 20px;
+    height: 75px;
+    border-radius: 7px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 429px;
+    font-family: 'Inter';
+    display: none;
+}
+
+.alert-failed {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    
+}
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
 /*
 
     PROYECTS PAGE
@@ -282,8 +421,7 @@ footer .copyright p {
 */
 
 
-.main-proyects
-{
+.main-proyects {
     width: 1250px;
     margin: 0px auto;
     display: flex;
@@ -294,43 +432,37 @@ footer .copyright p {
     margin-bottom: 50px;
 }
 
-.proyect
-{
+.proyect {
     height: 400px;
     width: 591px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     margin-top: 30px;
 }
 
-.proyect-image-container
-{
+.proyect-image-container {
     height: 164px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
 
-.proyect-description
-{
+.proyect-description {
     padding: 20px;
     color: #434343;
     font-family: 'Inter';
 }
 
-.proyect-description p
-{
+.proyect-description p {
     color: #434343;
 }
 
 
-.buttons-container
-{
+.buttons-container {
     display: flex;
     margin-top: 30px;
 }
 
-.btn
-{
+.btn {
     transition: transform 200ms ease;
     border: none;
     padding: 8px;
@@ -338,24 +470,20 @@ footer .copyright p {
     cursor: pointer;
 }
 
-.btn:active
-{
+.btn:active {
     transform: scale(.8);
 }
 
-.go-to-site-btn
-{
+.go-to-site-btn {
     background-color: #343433;
     color: #fffe;
     margin-right: 20px;
 }
 
-.go-to-github-btn
-{
+.go-to-github-btn {
     background: transparent;
 }
-.go-to-github-btn > span
-{
+
+.go-to-github-btn>span {
     text-decoration: underline;
 }
-

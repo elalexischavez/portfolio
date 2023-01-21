@@ -15,6 +15,7 @@
                 return showAlert(res.message);
             }
             // codigo ->
+            console.log(res)
             const mainContainer = document.createElement('div');
             document.querySelector('form').remove();
             document.querySelector('main').appendChild(mainContainer);
